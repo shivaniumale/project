@@ -17,6 +17,7 @@ public class Demo1Application {
 		SpringApplication.run(Demo1Application.class, args);
 		CreateJDBC jdbc=new CreateJDBC();
 		JdbcTemplate template;
+		System.out.println("hiii ");
 		List<User> user=new ArrayList<>();
 		String sql="select * from User";
 		try{template=jdbc.CreateTemplate();
